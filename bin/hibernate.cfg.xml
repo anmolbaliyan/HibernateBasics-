@@ -10,13 +10,16 @@
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
-		<property name="hbm2ddl.auto">update</property>
+		 <property name="hbm2ddl.auto">update</property>
+		<!-- <property name="hbm2ddl.auto">create</property> -->
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 
 		<mapping resource="in/com/rays/user/UserDTO.hbm.xml" />
 		<mapping resource="in/com/rays/auction/Auction.hbm.xml" />
 		<mapping resource="in/com/rays/auction/Bids.hbm.xml" />
+		<mapping resource="in/com/rays/oneone/Address.hbm.xml" />
+		<mapping resource="in/com/rays/oneone/Employee.hbm.xml" />
 
 	</session-factory>
 </hibernate-configuration>
